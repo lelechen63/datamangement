@@ -4,7 +4,7 @@ import re
 import pickle
 
 def read_folder():
-    datapath = '/u/lchen63/csc577/metadata'
+    datapath = './metadata'
     all_file = []
     for (root,dirs,files) in os.walk(datapath): 
             # print (root) 
@@ -13,7 +13,7 @@ def read_folder():
             if len(files) != 0:
                 all_file.append(os.path.join(root, files[0]))
             # print ('--------------------------------')
-    with open('/u/lchen63/csc577/pickle/all_file.pkl', 'wb') as handle:
+    with open('./pickle/all_file.pkl', 'wb') as handle:
                 pickle.dump(all_file, handle, protocol=pickle.HIGHEST_PROTOCOL)
     return all_file
 

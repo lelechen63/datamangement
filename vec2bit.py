@@ -21,11 +21,11 @@ def vec2bit(pkl_file):
     for d in data:
         print (d)
         vector = np.load( d.replace('json','npy')) 
-        _ = plt.hist(vector, bins='auto') 
-        plt.title("Histogram with 'auto' bins")
-        # plt.show()
-        plt.savefig('./original.png')
-        break
+        # _ = plt.hist(vector, bins='auto') 
+        # plt.title("Histogram with 'auto' bins")
+        # # plt.show()
+        # plt.savefig('./original.png')
+        # break
 
         int_vec = np.where(  vector < -0.3, 0, vector)
         int_vec = np.where( int_vec > 0.3 , 3, int_vec)
@@ -61,4 +61,4 @@ def vec2bit(pkl_file):
 # int_vec = np.where((int_vec < 0) & (int_vec > -2) ,1, int_vec)
 # print (vector)
 # print (int_vec)
-vec2bit('/u/lchen63/csc577/pickle/all_file.pkl')
+vec2bit('./pickle/all_file.pkl')

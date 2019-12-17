@@ -41,7 +41,7 @@ def word2vec(pkl_file):
         print (embeddings.shape)
         np.save(d.replace('json','npy'), embeddings)
 
-word2vec('/u/lchen63/csc577/pickle/all_file.pkl')
+word2vec('./pickle/all_file.pkl')
 
 
 
