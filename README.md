@@ -1,7 +1,7 @@
 ## Semantic Set Similar Search Using Binarized LSH
 By [Lele Chen](http://www.cs.rochester.edu/u/lchen63/) ,
 Haitian Zheng,
-[ Fatemeh Nargesian](http://www.cs.toronto.edu/~fnargesian/)
+[ Fatemeh Nargesian](http://www.cs.toronto.edu/~fnargesian/),
 University of Rochester.
 
 
